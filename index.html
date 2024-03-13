@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Prabhashi</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <style type="text/tailwindcss">
+    .title {
+        @apply text-[1.75rem] md:text-[3.125rem] leading-[1.1] font-semibold tracking-wide;
+    }
+
+    .subtitle {
+        @apply text-[1.125rem] md:text-[1.625rem] font-light; 
+    }
+
+    .red-btn{
+        @apply bg-[#e50914] py-[6px] mt-3 md:mt-0 px-[10px] md:px-[26px] flex items-center rounded-sm text-base md:text-[1.625rem] font-light;
+    }
+
+    .gray-border{
+        @apply border-t-[8px] border-[#222]
+    }
+
+    .list-item-icon{
+      @apply md:w-6 md:h-6 w-5 h-5 text-white fill-current rotate-45;
+    }
+
+    .list-item-title{
+      @apply md:text-[1.625rem] text-[1.125rem] tracking-wide;
+    }
+
+    .list-item{
+      @apply flex justify-between w-full bg-[#303030] py-4 md:py-5 md:px-8 px-4 items-center mb-3;
+    }
+    
+    .footer-item{
+      @apply pb-[14px];
+    }
+     
+    </style>
+</head>
+<body class="bg-black">
+   <!-- Hero section -->
+    <div class="bg-[url('https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/netflixteaser.png')] md:h-[95vh] h-[70vh] bg-cover bg-center relative">
+        <!-- overlay-->
+        <div class="absolute left-0 top-0 bottom-0 right-0 bg-gradient-to-b from-black/80 via-black/30 to-black/80"></div>
+        <!-- Navbar -->
+        <div class="flex justify-between w-full items-center px-5 md:px-[58px] pt-[28px] z-10 relative">
+        <svg viewBox="0 0 111 30" data-uia="netflix-logo" class="text-[#e50914] fill-current h-[24px] md:h-[36px]" aria-hidden="true" focusable="false"><g id="netflix-logo"><path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14"></path></g></svg>
+        <a href="#" class="bg-[#e50914] py-[0.25rem] px-[0.5rem] md:px-[17px] md:py-[7px] rounded-[3px] text-white text-[0.9rem]">Sign In</a>
+    </div>
+    <!--main text-->
+    <div class="relative z-10 flex flex-col text-center px-5 justify-center items-center md:w-[85%] w-full max-w-[800px] text-white h-full mx-auto gap-3">
+        <h1 class="title max-w-screen-sm">Unlimited movies, TV shows, and more.</h1>
+        <p class="subtitle md:py-[12px]">Watch anywhere. Cancel anytime.</p>
+        <p class="md:text-[1.2rem] text-[18px] font-light">Ready to watch? Enter your email to create or restart your membership.</p>
+        <!--Input & Button-->
+        <div class="flex flex-col md:flex-row w-full justify-center items-center md:items-stretch">
+            <input type="text" placeholder="Email address" class="md:w-[60%] w-full px-[10px] py-2 md:py-4 bg-white placeholder:text-sm">
+            <button class="red-btn">
+                <span>Get Started</span>
+                <svg class="w-5 h-5 text-white fill-current" viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg"><desc>chevron</desc><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill-rule="evenodd"></path></svg>
+                
+            </button>
+        </div>
+    </div>
+    </div>
+
+    <!--section 1-->
+    <div class="gray-border">
+        <div class="flex md:flex-row flex-col text-white justify-between py-16 md:gap-[30px] max-w-[1100px] mx-auto items-center">
+        <div class="md:w-[52%] w-full text-center md:text-left">
+          <h1 class="title pb-3">Enjoy on your TV.</h1>  
+          <p class="subtitle">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <div class="relative md:w-[48%] w-full">
+          <img class="w-full h-full" src="Rectangle 4.png" alt="">
+            <iframe class="absolute top-[35%] pt-100 pb-50 max-h-[60%] max-w-[93%] left-[50%]  -translate-x-1/2 -translate-y-1/2 w-full h-full"  src="https://www.youtube.com/embed/Di310WS8zLk" title="Wednesday Addams | Official Teaser | Netflix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+    </div>
+     <!--section 2-->
+     <div class="gray-border">
+      <div class="flex flex-col-reverse md:flex-row py-16 md:py-16 text-white justify-between md:gap-[100px] max-w-[1300px] mx-auto w-full items-center md:pb-[40px]">
+        <div class="relative w-full md:w-[48%]">
+          <!-- Big Image -->
+          <img class=" py-5  md:w-[full] md:h-[full] md:pl-[130px] pl-[35px]  " src="Home-Mobile.jpg" alt="">
+          <div class="flex items-center w-[70%] md:w-[60%] border-2 border-gray-700 justify-between gap-3 md:py-[0.5rem] py-[0.25rem] px-[0.5rem] md:px-[0.75rem] rounded-xl absolute left-[50%] bottom-[4%] -translate-x-1/2 bg-black">
+            <!-- Small Image -->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7QLrKMFT8ZCJtSe8VCX0eoFs4Nv9-38Ok_w&usqp=CAU" alt="" class="md:h-[4.5rem] h-[3rem]">
+            <div class="text-left ">
+              <div class="md:text-base text-[0.9rem]">Stranger Things</div>
+              <div class="md:text-base text-[0.75rem] text-[#0071eb]">Downloading...</div>
+            </div>
+            <img class="h-[4rem] w-[4rem] rounded-xl" src="https://cdn.dribbble.com/users/816967/screenshots/4594288/download_button.gif" alt="">
+          </div>
+        </div>
+        <div class="md:w-[52%] w-full text-center md:text-left md:pr-5">
+          <h1 class="pb-3 title">Download your shows to watch offline.</h1>
+          <p class="subtitle">Save your favorites easily and always have something to watch.</p>
+        </div>
+      </div>
+    </div>
+      <!-- Section 3 -->
+  <div class="gray-border">
+    <div class="flex flex-col md:flex-row text-white justify-between gap-[30px] max-w-[1100px] mx-auto items-center py-[70px]">
+      <div class="md:w-[52%] w-full text-center md:text-left">
+        <h1 class="title pb-3">Watch everywhere.</h1>
+        <p class="subtitle md:px-0 px-5">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+      </div>
+      <div class="relative md:block hidden w-[48%]">
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 4 -->
+  <div class="gray-border">
+    <div class="flex md:flex-row flex-col-reverse text-white justify-between gap-[100px] max-w-[1200px] mx-auto w-full items-center py-[30px]">
+      <div class="relative md:w-[48%] w-full">
+        <img class="w-[400px] h-[270px] pt-50 pr-5" src="data:image/jpeg;base64,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" alt="">
+      </div>
+      <div class="md:w-[52%] w-full text-center md:text-left">
+        <h1 class="title pb-3">Create profiles for kids.</h1>
+        <p class="subtitle md:px-0 md:pr-20 px-5">Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQs -->
+  <div class="gray-border">
+    <div class="text-white max-w-[1100px] mx-auto py-[70px]">
+      <h1 class="w-full px-2 mb-16 text-center title md:px-0">Frequently Asked Questions</h1>
+      <ul class="md:w-[75%] w-full mx-auto">
+        <li class="list-item">
+          <div class="list-item-title">What is Netflix?</div>
+          <svg id="thin-x" viewBox="0 0 26 26" class="list-item-icon" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+        </li>
+        <li class="list-item">
+          <div class="list-item-title">How much does Netflix cost?</div>
+          <svg id="thin-x" viewBox="0 0 26 26" class="list-item-icon" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+        </li>
+        <li class="list-item">
+          <div class="list-item-title">Where can I watch?</div>
+          <svg id="thin-x" viewBox="0 0 26 26" class="list-item-icon" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+        </li>
+        <li class="list-item">
+          <div class="list-item-title">How do I cancel?</div>
+          <svg id="thin-x" viewBox="0 0 26 26" class="list-item-icon" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+        </li>
+        <li class="list-item">
+          <div class="list-item-title">What can I watch on Netflix?</div>
+          <svg id="thin-x" viewBox="0 0 26 26" class="list-item-icon" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+        </li>
+        <li class="list-item">
+          <div class="list-item-title">Is Netflix good for Kids?</div>
+          <svg id="thin-x" viewBox="0 0 26 26" class="list-item-icon" focusable="true"><path d="M10.5 9.3L1.8 0.5 0.5 1.8 9.3 10.5 0.5 19.3 1.8 20.5 10.5 11.8 19.3 20.5 20.5 19.3 11.8 10.5 20.5 1.8 19.3 0.5 10.5 9.3Z"></path></svg>
+        </li>
+
+      </ul>
+
+      <p class="text-[1.2rem] text-center mt-20 mb-4 font-light">Ready to watch? Enter your email to create or restart your membership.</p>
+      <div class="flex flex-col md:flex-row w-[90%] md:w-[70%] mx-auto items-center md:items-stretch justify-center">
+        <input type="text" placeholder="Email address" class="md:w-[60%] w-full px-[10px] py-2 md:py-4 bg-white placeholder:text-sm">
+        <button class="red-btn">
+          <span>Get Started</span>
+          <svg class="md:w-5 md:h-5 w-4 h-4 text-white fill-current" viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg"><desc>chevron</desc><path d="M.61 1.312l.78-.624L5.64 6l-4.25 5.312-.78-.624L4.36 6z" fill-rule="evenodd"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="gray-border">
+    <div class="max-w-[1000px] text-[#737373] py-[70px] px-5 md:px-[45px] w-[90%] mx-auto">
+      <h2 class="pb-5">Questions? Contact Us</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 text-[12px] md:text-[13px]">
+        <div>
+          <div class="footer-item">FAQ</div>
+          <div class="footer-item">Investor Relations</div>
+          <div class="footer-item">Privacy</div>
+          <div class="footer-item">Speed Test</div>
+        </div>
+        <div>
+          <div class="footer-item">Help Center</div>
+          <div class="footer-item">Jobs</div>
+          <div class="footer-item">Cookie Preferences</div>
+          <div class="footer-item">Legal Notices</div>
+        </div>
+        <div>
+          <div class="footer-item">Account</div>
+          <div class="footer-item">Ways to Watch</div>
+          <div class="footer-item">Corporate Information</div>
+          <div class="footer-item">Only on Netflix</div>
+        </div>
+        <div>
+          <div class="footer-item">Media Center</div>
+          <div class="footer-item">Terms of use</div>
+          <div class="footer-item">Contact Us</div>
+        </div>
+      </div>
+      <h2 class="pt-5 text-[12px] md:text-[13px]">Netflix Sri Lanka</h2>
+    </div>
+  </footer>
+</body>
+</html>
+</body>
+</html>
